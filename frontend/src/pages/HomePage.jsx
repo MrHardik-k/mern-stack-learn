@@ -37,8 +37,9 @@ const HomePage = () => {
           md: 2,
           lg: 3,
         }}
-        gap={10}
+        gap={5}
         w={"full"}
+        paddingBottom={4}
       >
         {products.map((product) => (
           <ProductCard key={product._id} product={product} />

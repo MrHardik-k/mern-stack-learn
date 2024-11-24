@@ -16,10 +16,10 @@ const HomePage = () => {
   console.log("products", products);
 
   return (
-    <Container maxW={"2/3"} py={12}>
-      <VStack spaceY={10}>
+    <Container maxW={{base:"4/5", sm:'3/4', lg:'2/3'}} py={12}>
+      <VStack spaceY={5}>
       <HStack
-          fontSize={{ base: "2xl", sm: "2.8xl" }}
+          fontSize={{ base: "sm", sm:'xl', lg:"2xl" }}
           fontWeight={"bold"}
           textTransform={"uppercase"}
           textAlign={"center"}

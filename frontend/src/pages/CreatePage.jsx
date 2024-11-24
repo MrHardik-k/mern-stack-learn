@@ -33,12 +33,12 @@ const CreatePage = () => {
     };
 
     return (
-        <Container maxW={"2/3"} marginY="10">
-            <VStack spaceY={10}>
-				<Heading as={"h1"} size={"3xl"} textAlign={"center"} mb={8}>
+        <Container maxW={{base:"11/12", sm:'5/6', lg:'2/3'}} marginTop={16}>
+            <VStack>
+				<Heading as={"h1"} size={{ base: "sm", sm:'xl', lg:"2xl" }} textAlign={"center"} mb={8}>
 					Create New Product
 				</Heading>
-                <Box w={"full"} bg={useColorModeValue("white", "gray.800")} p={12} rounded={"lg"} shadow={"md"}>
+                <Box w={"full"} bg={useColorModeValue("white", "gray.800")} p={{base:5, sm:8, lg:12}} rounded={"lg"} shadow={"md"}>
 					<VStack spaceY={'5'}>
 						<Input
 							placeholder='Product Name'

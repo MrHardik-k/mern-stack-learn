@@ -19,17 +19,19 @@ const Navbar = () => {
                 base: "column",
                 sm: "row",
             }}
+            gap={3}
         >
 
             {/* Logo Section */}
             <HStack as={Link} to="/" spaceX={2} alignItems={"center"}
-                fontSize={{ base: "2xl", sm: "2.8xl" }}
+                fontSize={{ base: "xl", sm:'2xl', lg:"3xl" }}
                 fontWeight={"bold"}
                 textTransform={"uppercase"}
                 textAlign={"center"}
                 color={useColorModeValue("blue.500", "cyan.400")}
             >
-                <Text>
+                <Text
+                marginTop={2}>
                     Product Store
                 </Text>
                 <FaCartShopping />

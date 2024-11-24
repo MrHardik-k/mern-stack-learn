@@ -16,7 +16,7 @@ const HomePage = () => {
   console.log("products", products);
 
   return (
-    <Container maxW={{base:"4/5", sm:'3/4', lg:'2/3'}} py={12}>
+    <Container maxW={{base:"4/5", sm:'3/4', lg:'2/3'}} marginTop={16}>
       <VStack spaceY={5}>
       <HStack
           fontSize={{ base: "sm", sm:'xl', lg:"2xl" }}
